@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Saya - Bunga Mulia</title>
+
+    <!-- Google Fonts: Poppins (judul) dan Lora (isi artikel) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="kepala">
+        <p class="nama-blog">Blog Bunga</p>
+        <nav>
+            <a href="index.html">Beranda</a>
+            <a href="#artikel">Artikel</a>
+            <a href="#penutup">Penutup</a>
+        </nav>
+    </header>
+
+    <main>
+        <article id="artikel">
+            <h1>Catatan Pertama Belajar HTML dan CSS</h1>
+            <p class="info">
+                Ditulis oleh Bunga Mulia pada
+                <time datetime="2026-10-22">22 Oktober 2026</time>
+            </p>
+
+            <p class="pembuka">
+                Lima pertemuan pertama kuliah Pemrograman Web membuat saya sadar bahwa
+                membuat halaman web tidak sesulit yang saya bayangkan, asalkan dikerjakan
+                pelan-pelan dan dicoba sendiri.
+            </p>
+
+            <p>
+                Pertemuan pertama dimulai dari hal paling dasar: struktur dokumen HTML.
+                Saya sempat lupa menutup tag <code>&lt;p&gt;</code> dan hasilnya tampilan
+                halaman jadi berantakan. Dari situ saya belajar bahwa setiap tag pembuka
+                harus punya pasangan penutup.
+            </p>
+
+            <p>
+                Setelah itu kami mengenal teks, daftar, tautan, gambar, tabel, dan formulir.
+                Bagian yang paling saya suka adalah formulir, karena browser ternyata sudah
+                bisa memeriksa isian kosong tanpa kita menulis kode tambahan.
+            </p>
+
+            <blockquote>
+                Menurut dokumentasi MDN, HTML menyediakan struktur, sedangkan CSS mengatur
+                bagaimana struktur itu ditampilkan.
+            </blockquote>
+
+            <p>
+                Masuk ke CSS, saya belajar memisahkan tampilan ke file <code>style.css</code>.
+                Dengan cara ini, satu perubahan warna cukup dilakukan di satu tempat dan
+                berlaku untuk seluruh halaman. Saya juga baru paham kenapa aturan dengan
+                <em>id</em> mengalahkan aturan dengan <em>class</em>: itu soal specificity.
+            </p>
+
+            <p>
+                Supaya tidak lupa, ini hal-hal yang saya catat dari materi CSS:
+            </p>
+
+            <ul>
+                <li>Selector elemen, class, dan id punya bobot yang berbeda.</li>
+                <li>Pilih maksimal dua jenis font agar tampilan tetap rapi.</li>
+                <li>Gunakan <code>line-height</code> agar paragraf nyaman dibaca.</li>
+                <li>Batasi lebar konten dengan <code>max-width</code>.</li>
+            </ul>
+
+            <p>
+                Bagi yang ingin belajar lebih jauh, tiga sumber ini membantu saya:
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank" rel="noopener">MDN Learn HTML</a>,
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS" target="_blank" rel="noopener">MDN Learn CSS</a>, dan
+                <a href="https://fonts.google.com" target="_blank" rel="noopener">Google Fonts</a>
+                untuk memilih jenis huruf.
+            </p>
+        </article>
+    </main>
+
+    <footer id="penutup">
+        <p>&copy; 2026 Bunga Mulia - NPM 2510010022</p>
+    </footer>
+</body>
+</html>

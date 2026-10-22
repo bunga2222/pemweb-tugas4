@@ -1,0 +1,149 @@
+/* ===== STYLE BLOG SAYA - Tugas 4 =====
+   Bunga Mulia (2510010022) - 22 Oktober 2026 */
+
+
+/* === WARNA ===
+   Palet yang dipakai:
+   hijau tua  #2F5D50  -> judul, link, header
+   oranye     #E8622D  -> aksen (garis, hover)
+   krem       #F6F1E7  -> latar halaman
+   teks gelap #2B2B2B
+*/
+
+
+/* === DASAR HALAMAN === */
+body {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #2B2B2B;
+    background-color: #F6F1E7;
+    margin: 0;
+}
+
+
+/* === HEADER DAN NAVIGASI === */
+#kepala {
+    background-color: #2F5D50;
+    padding: 14px 0;
+}
+
+/* selector id + descendant: isi header dibatasi lebarnya juga */
+#kepala .nama-blog,
+#kepala nav {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#kepala .nama-blog {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+nav a {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 14px;
+    color: #F6F1E7;
+    text-decoration: none;
+    margin-right: 18px;
+}
+
+nav a:hover {
+    color: #E8622D;
+    text-decoration: underline;
+}
+
+
+/* === LEBAR KONTEN === */
+main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+
+/* === JUDUL DAN TIPOGRAFI === */
+h1 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 32px;
+    line-height: 1.3;
+    color: #2F5D50;
+    margin-bottom: 8px;
+}
+
+.info {
+    font-size: 14px;
+    color: #6b6b6b;
+    margin-top: 0;
+    border-bottom: 2px solid #E8622D;
+    padding-bottom: 12px;
+}
+
+p {
+    text-align: justify;
+}
+
+/* selector child: paragraf pembuka (anak ke-3 article) */
+article > p:nth-child(3) {
+    font-size: 18px;
+}
+
+.pembuka {
+    font-style: italic;
+}
+
+
+/* === KUTIPAN DAN LIST === */
+blockquote {
+    margin: 24px 0;
+    padding: 4px 20px;
+    border-left: 5px solid #E8622D;
+    background-color: #FFFFFF;
+    font-style: italic;
+}
+
+ul li {
+    margin-bottom: 4px;
+}
+
+/* pseudo-class: item pertama dibuat tebal */
+ul li:first-child {
+    font-weight: 600;
+}
+
+code {
+    background-color: #E9E2D0;
+    padding: 1px 5px;
+    font-size: 15px;
+}
+
+
+/* === LINK === */
+article a {
+    color: #2F5D50;
+    font-weight: 600;
+}
+
+article a:hover {
+    color: #E8622D;
+}
+
+
+/* === FOOTER === */
+footer {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 13px;
+    text-align: center;
+    color: #6b6b6b;
+    border-top: 1px solid #cfc7b3;
+}
